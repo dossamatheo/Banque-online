@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.farhad.controllers.RegistrationController"
+            id="registration-page-root"
+            stylesheets="@../style/registration_page.css">
+    <top>
+        <HBox spacing="25.0" alignment="CENTER_LEFT">
+            <ImageView>
+                <Image url="@../icons/registration.png" />
+            </ImageView>
+            <Label text="Sign Up" id="sign-up-label"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="10.0" alignment="CENTER">
+            <VBox spacing="15.0" alignment="CENTER">
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Full Name:" />
+                    <TextField fx:id="fullNameTextField" styleClass="text-field" />
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Customer Type:" />
+                    <ChoiceBox fx:id="customerTypesChoiceBox" id="choice-box" />
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Phone:" />
+                    <TextField fx:id="phoneTextField" styleClass="text-field"/>
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Email:" />
+                    <TextField fx:id="emailTextField" styleClass="text-field"/>
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Username:" />
+                    <TextField fx:id="usernameTextField" styleClass="text-field"/>
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Password:" />
+                    <PasswordField fx:id="passwordTextField" styleClass="text-field"/>
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Confirm Password:" />
+                    <PasswordField fx:id="confirmPassTextField" styleClass="text-field"/>
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Main Account ID:" />
+                    <TextField fx:id="accountIdTextField" styleClass="text-field" />
+                </HBox>
+                <HBox spacing="5.0" alignment="CENTER">
+                    <Label styleClass="label" text="Other Details:" />
+                    <TextField fx:id="otherDetailsTextField" styleClass="text-field"/>
+                </HBox>
+                <Button fx:id="signUpButton" id="sign-up-btn" text="Sign Up"/>
+                <Separator maxWidth="350" />
+            </VBox>
+            <Label fx:id="loginLabel" id="login-label" text="Have an account? Login" />
+        </VBox>
+    </center>
+
+</BorderPane>
